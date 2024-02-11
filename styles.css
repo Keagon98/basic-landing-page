@@ -1,0 +1,94 @@
+/* Basic CSS Reset */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFD748;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #000000;
+
+    &:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2px;
+    }
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+
+    .logo-wrapper {
+        img {
+            width: 50px;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            li {
+                list-style: none;
+                margin: 0 2em;
+            }
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: #000000;
+            color: #FFD748;
+            border: 1px solid #000000;
+            border-radius: 2px;
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+ }
+
+ main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0 2em;
+
+    section {
+        .main-landing-text {
+            width: 80%;
+        }
+    }
+ }
